@@ -1,8 +1,6 @@
 # Sample
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sample`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The sample gem provides no functionality. It is just enough of a package to be useful for testing software that uses gems.
 
 ## Installation
 
@@ -22,15 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You could then prove that the correct version of the gem is installed as follows:
 
-## Development
+```
+sheldonh@DESKTOP-EL62KQG:~/sample-gem$ irb
+3.4.1 :001 > $LOAD_PATH.unshift('lib');
+3.4.1 :002 > require 'sample';
+3.4.1 :003 > Sample::VERSION
+ => "0.1.2"
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Most likely, you already have your own test methods and just needed an off-the-shelf gem on RubyGems.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sample.
+Bug reports and pull requests are welcome on GitHub at https://github.com/starjuice/sample-gem.
 
